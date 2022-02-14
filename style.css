@@ -1,0 +1,111 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+  }
+   
+  .heading_style {
+    text-align: center;
+    text-transform: uppercase;
+    background-color: black;
+    margin-bottom: 30px;
+    font-weight: 500;
+    padding: 20px ;
+    letter-spacing: 3px;
+    font-size: 1 3px;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+  }
+  
+  .cards{
+    width: 90%;
+    height: auto;
+  }
+  
+  .card {
+    transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+    background-color: lightgreen;
+    width: 21.50%;
+    border-radius: 12px;
+    box-shadow: 0px 13px 10px -7px rgb(48, 45, 45) ;
+   display: grid;
+   float:right;
+   margin: 4%;
+  
+  }
+  
+  .card:hover {
+    box-shadow: 0px 30px 18px -8px black;
+    transform: scale(1.05, 1.05);
+  }
+  .card img{
+    width: 100%;
+    border-top-left-radius: 12px;
+    border-top-right-radius: 12px;
+  }
+  
+  .card_info{
+    background-color:rgb(247, 247, 202);
+    border-bottom-left-radius: 12px;
+    border-bottom-right-radius: 12px;
+    padding: 16px 22px 22px 24px;
+    
+  }
+  
+  .card_category {
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: black;
+  
+  }
+  .card_title {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+  }
+  
+  .btn {
+    padding: 5px 8px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: uppercase;
+    font-size: 13px;
+    letter-spacing: 2px;
+    font-weight: 500;
+    color: darkolivegreen;
+    background-color: #fff;
+    outline: none;
+    border: 2px solid black;
+    cursor: pointer;
+    align-items: center;
+  }
+  
+  @media (max-width: 768px) {
+  .card{
+    margin: 40%;
+      display: inline-flexbox;
+      justify-content: space-evenly;
+  }
+  .cards{
+    width: 100%;
+    height: auto;
+    display: table-row;
+  
+  }
+  .card_img{
+    align-items: auto;
+    height: auto;
+    width: 100;
+  
+  }
+  
+  .heading_style{
+    width: 100%;
+    height: auto;
+  }
+  }
+  
